@@ -1,3 +1,13 @@
+def check_prime(x):
+  for i in range(2,x):
+    if x % i == 0:
+      return 0
+  else:
+    return 1
+
+print('Checking for 10',check_prime(10))
+print('Checking for 13',check_prime(13))
+
 def first_N_primes(N):
     x = 2
     count_primes = 0
@@ -12,6 +22,7 @@ def first_N_primes(N):
         x +=1
     return primes
 
+print('First Ten Prime numbers are :',first_N_primes(10))
 
 def check_palindrome(x):
     if str(x) == str(x)[::-1]:
@@ -37,6 +48,10 @@ class Employees:
 
     def calculate_annual_salary(self):
         return print(f"Annual Salary of {self.name} is : {self.salary * 12}")
+
+e1 = Employees('Elvis','E001','Project Lead',500000,'IT')
+e2 = Employees('Carla','E002','Project Manager',750000,'Marketing')
+
 
 grocery_list=['Desserts','Shopping Bags','Soft Cheese','Bottled Water','Oranges','Tomatoes','Milk ',
 'Canned Meat','Apples','Cheese Popcorn','Dry Mix','Brown Rice','Rolls Buns','Oregano',
