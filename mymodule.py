@@ -7,6 +7,7 @@ def check_prime(x):
 
 print('Checking for 10',check_prime(10))
 print('Checking for 13',check_prime(13))
+print('Checking for 31',check_prime(31))
 
 def first_N_primes(N):
     x = 2
@@ -22,7 +23,9 @@ def first_N_primes(N):
         x +=1
     return primes
 
-print('First Ten Prime numbers are :',first_N_primes(10))
+
+
+print('First Five Prime numbers are :',first_N_primes(5))
 
 def check_palindrome(x):
     if str(x) == str(x)[::-1]:
